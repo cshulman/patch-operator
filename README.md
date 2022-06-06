@@ -1,8 +1,8 @@
-After the patch operator is installed and the correct permissions (via service account & cluster rolebinding) are granted, we can now create patches manifests so they are applied to the cluster.
+This repo contains manifests for installing the patch-operator on an OpenShift cluster. More information about the patch-operator can be found https://github.com/redhat-cop/patch-operator#deploying-the-operator
 
-Patches in this repo are as follows:
 
-- Remove Self Provisioner role from all authenticated users. This prevents users from being able to create new namespaces / projects.
-This is applied with the following:
+- To utilize, first install the patch-operator by applying the manifests in the 'install' directory
 
-oc apply -f remove-selfprov.yaml 
+- Next, apply any/all of the patches located in the 'patches' directory
+
+- The 'manual' directory contains manifests that can be applied manually to accomplish the same results as the manifests in the 'patches' directory, but without the patch-operator to manage them.
