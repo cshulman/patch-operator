@@ -17,5 +17,3 @@ kind: OperatorGroup
 metadata:
   name: patch-operator
   namespace: patch-operator
-spec:
-  targetNamespaces: {}
