@@ -9,8 +9,6 @@ spec:
   name: patch-operator
   source: community-operators
   sourceNamespace: openshift-marketplace
-  targetNamespaces:
-  - patch-operator
 ---
 apiVersion: operators.coreos.com/v1
 kind: OperatorGroup
